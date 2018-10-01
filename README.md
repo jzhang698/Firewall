@@ -21,6 +21,8 @@ Finally, I know my algorithm isn't the optimal rule matching algorithm. So there
 ### MISC.
 In total I spent 78 minutes in design and implementation. However, that does not include writing comments on my code and reading through everything again. Also, it doesn't include the more extensive test cases. I only tested it with the 5 basic ones given already. After the 78 minutes though, I did spend about 15 more minutes testing and I fixed a small bug (I used unsigned int instead of int and it underflowed and gave me a segmentation fault for array index out of bound) It was quickly caught though. Hopefully, the few minutes I went over testing it don't matter too much. I did manage to speed up the process significantly by copying and pasting a lot of my old code though. For example, the file parsing would have taken me 30 minutes to do from scratch but instead took me 5 because I just had a coding exercise from Jane Street that I also wrote a very similar parser for. The skeleton of the header file was also taken from one of my old homeworks. The function that took the longest was probably the compare() function in the Rule struct (I'd guess about 30 minutes).
 
+I also included an image of the outputs, corresponding to the test cases and fw.csv file included in this repository.
+
 
 ### ORDER OF PREFERENCE FOR TEAMS
 My order of preference for teams is Platform first, Policy, then Data. Mainly because this is all relatively new to me and I see the most familiarity in Platform.
