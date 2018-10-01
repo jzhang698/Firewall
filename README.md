@@ -14,7 +14,7 @@ I have a couple issues with my code. First of all, I couldn't optimize the `std:
 
 Also, I would have liked to clean up my parsing function a little bit. I'm sure there's better ways than getline and stringstreams, but this is just what I was familiar with. I'm sure I could have parsed it based on commas instead of traversing the whole string to turn commas (and dashes) into spaces (for stringstream). Because I wasn't great at parsing it, I could be traversing the whole file about 2-3 times. However, this is still just a constant cost. 
 
-Another thing I missed now that I'm looking back at my code, was that I accidentally declared my struct's data members in the wrong order. Now each one has a lot more wasted space. I should have declared the strings first because those are 8 byte aligned... As of now, there's a good 22 bytes wasted per Rule object that I could have gotten rid of.
+Another thing I missed now that I'm looking back at my code, was that I accidentally declared my struct's data members in the wrong order. Now each one has a lot more wasted space. I should have declared the strings first because those are 8 byte aligned... As of now, there's 15 bytes wasted per Rule object that I could have gotten rid of.
 
 Finally, I know my algorithm isn't the optimal rule matching algorithm. So there's the biggest optimization that I could make. I just don't know how, but I will look into it after submitting this.
 
